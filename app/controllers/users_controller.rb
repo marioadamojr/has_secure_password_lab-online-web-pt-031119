@@ -3,8 +3,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    User.create(user_params)
-    session[:name] = params[:user][:name]
+    @user = User.create(user_params)
+    session[:user_id] = @user.id
     redirect_to '/homepage'
   end
 
