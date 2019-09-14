@@ -9,7 +9,6 @@ class UsersController < ApplicationController
     redirect_to '/homepage'
   end
 
-
   private
 
   def user_params
