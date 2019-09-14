@@ -7,6 +7,10 @@ class UsersController < ApplicationController
     redirect_to '/homepage'
   end
 
+  def login
+
+  end
+
   private
 
   def user_params
